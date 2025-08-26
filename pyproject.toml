@@ -1,0 +1,11 @@
+[project]
+name = "iplocation"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "colorlog>=6.9.0",
+    "ip2location>=8.10.5",
+    "pymongo>=4.14.1",
+    "python-dotenv>=1.1.1",
+]
