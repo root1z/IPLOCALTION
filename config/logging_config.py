@@ -59,7 +59,7 @@ def setup_mongodb_logger():
     
     # Lấy config từ environment
     log_config = get_log_config()
-    mongo_logger.setLevel(log_config['level'])  # Fixed: was 'level_int'
+    mongo_logger.setLevel(log_config['level'])
     
     if mongo_logger.handlers:
         return mongo_logger
@@ -77,7 +77,7 @@ def setup_mongodb_logger():
         backupCount=log_config['backup_count'],
         encoding='utf-8'
     )
-    mongo_handler.setLevel(log_config['level'])  # Fixed: was 'level_int'
+    mongo_handler.setLevel(log_config['level'])
     mongo_handler.setFormatter(mongo_formatter)
     mongo_logger.addHandler(mongo_handler)
     
